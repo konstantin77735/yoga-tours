@@ -37,11 +37,11 @@ document.addEventListener('DOMContentLoaded', function () {
         let z = Date.parse(end) - Date.parse(new Date()),
             minutes = Math.floor((z / 1000 / 60) % 60),
             seconds = Math.floor((z / 1000) % 60),
-            hours = Math.floor((z / (1000 * 60 * 60))),
+            hours = Math.ceil((z / (1000 * 60 * 60)/60)),
             days = Math.floor((z / (1000 * 60 * 60 * 24)));
         return {
             'total': z,
-            // 'days': days,
+            'days': days,
             'hours': hours,
             'minutes': minutes,
             'seconds': seconds
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function setTime(objectTimer, endTime) {
         let timer = document.querySelector(objectTimer),
-            //  days = timer.querySelector('.days'),
+            days = timer.querySelector('.days'),
             hours = timer.querySelector('.hours'),
             minutes = timer.querySelector('.minutes'),
             seconds = timer.querySelector('.seconds'),
@@ -59,10 +59,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         function updateTime() {
             let t = waiting(endTime);
-            // days.textContent = t.days;
-            hours.textContent = `${t.hours} ч.`;
-            minutes.textContent = `${t.minutes} м.`;
-            seconds.textContent = `${t.seconds} с.`;
+             days.textContent = t.days;
+            hours.textContent = t.hours;
+            minutes.textContent = t.minutes;
+            seconds.textContent = t.seconds;
 
             if (t.total <= 0) {
                 clearInterval(timeInterval);
