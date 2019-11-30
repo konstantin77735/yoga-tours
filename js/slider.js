@@ -32,15 +32,19 @@ document.addEventListener('DOMContentLoaded', function () {
         },
 
         changeDots: function () {
-            for (let i = 0; i <= this.slides.length; i++) {
+            try {
+                for (let i = 0; i <= this.slides.length; i++) {
 
-                if (i == this.currentSlide) {
-                    this.dots[i].classList.add('dot-active');
-                } else {
-                    this.dots[i].classList.remove('dot-active');
-                    this.dots[i].disabled = true;
+                    if (i == this.currentSlide) {
+                        this.dots[i].classList.add('dot-active');
+                    } else {
+                        this.dots[i].classList.remove('dot-active');
+                        this.dots[i].disabled = true;
+                    }
                 }
-            };
+            } catch {
+               
+            }
         },
 
 

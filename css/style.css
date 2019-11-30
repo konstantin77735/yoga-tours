@@ -391,7 +391,7 @@ header ul li:before {
     transform: translate(-50%);
     opacity: .5;
     -webkit-transition: 1s;
-    transition:  all .3s linear;
+    transition: all .3s linear;
 }
 
 .content .slider .wrap .next {
@@ -849,159 +849,508 @@ header ul li:before {
     }
 }
 
-@media (max-width:1025px){ /*для айпад и айпад про*/
-    html, body{
+@media (max-width:1025px) {
+    html,
+    body {
         font-size: 14px;
     }
-    .content .contact { 
-    width: 100%;}
-    .content .timer-numbers{
+
+    .content .contact {
+        width: 100%;
+    }
+
+    .content .timer-numbers {
         font-size: 4rem;
     }
-  .content .contact-img img {
-    max-height: 490px;
-    max-width: 450px;
-    width: 105%;
+
+    .content .contact-img img {
+        max-height: 490px;
+        max-width: 450px;
+        width: 105%;
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
+    .content .info {
+        padding: 18px;
+    }
+
     .main {
-    height: 555px;
+        height: 555px;
     }
+
     .main-block {
-        min-height: 230px; 
+        min-height: 230px;
         margin-top: 170px;
+        padding: 21px 10px 18px;
     }
+
     .main-block .main-block-link {
-    font-size: 18px;
+        font-size: 18px;
     }
+
     .main-block .main-block-title {
-    font-size: 24px;
-    margin-top: 20px;
+        font-size: 22px;
+        margin-top: 20px;
     }
+
     .main-block .main-block-descr {
-    font-size: 13px;
-    margin-top: 20px;
+        font-size: 13px;
+        margin-top: 20px;
     }
+
     .content .info {
         padding: 22px;
         min-height: 367px;
     }
-    .content .timer, .content .slider, .content .counter {
+
+    .content .timer,
+    .content .slider,
+    .content .counter {
         margin-top: 100px;
     }
-    
+
     .content .info-header {
-        height: 30px;}
+        height: 30px;
+    }
+
     .content .info-header-tab {
         font-size: 18px;
     }
-    .content .info-tabcontent{
-            padding-top: 25px;
+
+    .content .info-tabcontent {
+        padding-top: 25px;
     }
-    .content .info-tabcontent .description{
-        width:100%;
+
+    .content .info-tabcontent .description {
+        width: 100%;
     }
+
     .content .info-tabcontent .description-title {
-    font-size: 22px;
-    font-weight: bold;
+        font-size: 18px;
+        font-weight: bold;
     }
+
     .content .info-tabcontent .description-text {
-    margin-top: 20px;
-    font-weight: 300;
-    font-size: 14px;
-    padding-right: 10px;
+        margin-top: 20px;
+        font-weight: 300;
+        font-size: 14px;
+        padding-right: 10px;
     }
+
     .content .info-tabcontent .description-btn {
-    width: 170px;
-    height: 35px;
-    line-height: 35px;
-    margin-top: 25px;
-    font-size: 14px;
+        width: 170px;
+        height: 35px;
+        line-height: 35px;
+        margin-top: 25px;
+        font-size: 14px;
     }
+
     .content .timer-title {
-    font-size: 27px;
+        font-size: 27px;
     }
+
     .content .timer-action {
-    font-size: 21px;
-    margin-top: 27px;
+        font-size: 21px;
+        margin-top: 27px;
     }
+
     .content .timer-numbers {
-    font-size: 2.3rem;
+        font-size: 2.3rem;
     }
+
     .content .more {
-    margin-top: 57px;
-    width: 226px;
-    height: 44px;
-    font-size: 18px;
+        margin-top: 57px;
+        width: 226px;
+        height: 44px;
+        font-size: 18px;
     }
-    
+
     .content .slider-title {
-    font-size: 22px;
+        font-size: 22px;
     }
+
     .content .slider .wrap .slider-item {
-    width: 100%;
-    margin-top: 30px;}
-    
+        width: 100%;
+        margin-top: 30px;
+    }
+
     .content .slider .wrap .prev {
-    width: 30px;
-    left: 0;
+        width: 30px;
+        left: 0;
     }
-    .content .slider .wrap .next{
-    width: 30px;
-    right: 0;
+
+    .content .slider .wrap .next {
+        width: 30px;
+        right: 0;
     }
-    .content .slider .wrap .prev .arrow-left, .content .slider .wrap .next .arrow-right {
-    width: 17px;
-    height: 17px;
+
+    .content .slider .wrap .prev .arrow-left,
+    .content .slider .wrap .next .arrow-right {
+        width: 17px;
+        height: 17px;
     }
-    
+
     .content .slider-dots .dot {
-    height: 10px;
-    width: 10px;
-    margin: 0px 6px;}   
+        height: 10px;
+        width: 10px;
+        margin: 0px 6px;
+    }
+
     .content .slider-dots .dot-active {
-    height: 11px;
-    width: 11px;
+        height: 11px;
+        width: 11px;
     }
-    
+
     .content .counter-title {
-    font-size: 24px;
+        font-size: 24px;
     }
+
     .content .counter-block {
-    margin-top: 20px;
-    height: 45px;
-    width: 100%;
+        margin-top: 20px;
+        height: 45px;
+        width: 100%;
     }
+
     .content .counter-block-option {
-    font-size: 1.2rem;
+        font-size: 1.2rem;
     }
+
     .content .counter-block-input {
-    width: 120px;
-    height: 60px;
-    padding: 10px;
-    font-size: 1.2rem;
+        width: 120px;
+        height: 60px;
+        padding: 10px;
+        font-size: 1.2rem;
     }
+
     .content .counter-block select {
-    width: 50%;
-    height: 30px;
-    padding-left: 0;
+        width: 50%;
+        height: 30px;
+        padding-left: 0;
     }
+
     .content .counter-total {
-    margin-top: 30px;
-    padding-right: 0;
-    font-size: 22px;}
+        margin-top: 30px;
+        padding-right: 0;
+        font-size: 22px;
+    }
+
     .content .counter-total span {
-    font-size: 30px;
-    line-height: 35px;
-}
+        font-size: 30px;
+        line-height: 35px;
+    }
+
     .content .counter-block-selects {
         font-size: 1rem;
         width: 100%;
     }
-    .content .counter-block-selects option{
+
+    .content .counter-block-selects option {
         font-size: .7rem;
     }
-    
+
+    .content .contact {
+        width: 100%;
+        height: 100%;
+        min-height: 252px;
+    }
+
+    .content .contact-img img {
+        max-height: 220px;
+        max-width: 143px;
+        width: 100%;
+    }
+
+    .content .contact-form {
+        width: 70%;
+        padding-left: 0;
+    }
+
+    .content .contact-form-title {
+        margin-top: 17px;
+        font-size: 18px;
+    }
+
+    .content .contact-form form input {
+        width: 90%;
+        height: 25px;
+        margin-top: 26px;
+    }
+
+    .content .contact-form form button {
+        width: 100%;
+        margin: 49px 0px 0px 46px;
+        max-width: 140px;
+        height: 32px;
+    }
+
+    .content footer .social {
+        padding-top: 14px;
+    }
+
+    .social-block {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-block a img {
+        margin-top: 9px;
+    }
+    .content .info .photo{
+        display: none;
+    }
+
+}
+
+@media (max-width:360px) {
+    .main {
+        height: 460px;
+    }
+
+    .main-block {
+        min-height: 200px;
+        margin-top: 145px;
+        padding: 18px 6px 14px;
+    }
+
+    .main-block .main-block-link {
+        font-size: 18px;
+    }
+
+    .main-block .main-block-title {
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    .main-block .main-block-descr {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+
+    .content .info-header {
+        height: 30px;
+    }
+
+    .content .info-header-tab {
+        font-size: 16px;
+    }
+
+    .content .info-tabcontent {
+        padding-top: 25px;
+    }
+
+    .content .info-tabcontent .description-title {
+        font-size: 16px;
+    }
+
+    .content .info-tabcontent .description-text {
+        margin-top: 15px;
+        font-weight: 300;
+        font-size: 12px;
+        padding-right: 5px;
+    }
+
+    .content .info-tabcontent .description-btn {
+        width: 155px;
+        height: 32px;
+        line-height: 20px;
+        margin-top: 26px;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .content .timer,
+    .content .slider,
+    .content .counter {
+        margin-top: 70px;
+    }
+
+    .content .timer-title {
+        font-size: 17px;
+    }
+
+    .content .timer-action {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    .content .timer .timer-numbers {
+        margin-top: 15px;
+        font-size: 1.5rem;
+    }
+
+    .content .more {
+        margin-top: 30px;
+        width: 178px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .content .slider-title {
+        font-size: 16px;
+    }
+
+    .content .slider .wrap .prev {
+        width: 20px;
+        left: 0;
+    }
+
+    .content .slider .wrap .next {
+        width: 20px;
+        right: 0;
+    }
+
+    .content .slider .wrap .prev .arrow-left,
+    .content .slider .wrap .next .arrow-right {
+        width: 17px;
+        height: 17px;
+    }
+
+    .content .slider-dots {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .content .counter-title {
+        font-size: 21px;
+    }
+
+    .content .counter-block {
+        margin-top: 10px;
+        height: 33px;
+    }
+
+    .content .counter-block-option {
+        font-size: 1rem;
+    }
+
+    .content .counter-block-input {
+        width: 100px;
+        height: 10px;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .content .counter-block select {
+        font-size: .8rem;
+        width: 50%;
+        height: 21px;
+        padding-left: 0;
+    }
+
+    .content .counter-block-selects option {
+        font-size: .7rem;
+    }
+
+    .content .counter-total {
+        margin-top: 15px;
+        padding-right: 0;
+        font-size: 16px;
+    }
+
+    .content .counter-total span {
+        font-size: 1.6rem;
+        line-height: 28px;
+    }
+
+    .content .contact {
+        margin-top: 100px;
+        width: 100%;
+        height: 100%;
+        min-height: 220px;
+    }
+
+    .content .contact-form-title {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .content .contact-form form input {
+        width: 90%;
+        height: 20px;
+        margin-top: 26px;
+    }
+
+    .content .contact-form form button {
+        width: 100%;
+        margin: 44px 0px 0px 65px;
+        max-width: 110px;
+        height: 28px;
+    }
+
+    .content footer .social .social-block {
+        width: 55px;
+        height: 55px;
+    }
+
+    .content footer .social .social-block a img {
+        margin-top: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    .main-block .main-block-descr {
+        font-size: 11px;
+    }
+
+    .content .info-header-tab {
+        font-size: 14px;
+    }
+
+    .content .info-tabcontent .description-title {
+        font-size: 14px;
+    }
+
+    .content .counter-title {
+        font-size: 15px;
+        width: 104%;
+    }
+
+    .content .counter-block-option {
+        font-size: .93rem;
+    }
+
+    .content .counter-total {
+        font-size: 15px;
+    }
+
+    .content .counter-total span {
+        font-size: 1.3rem;
+    }
+
+    .content .contact-form-title {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .content .contact-form form input {
+        width: 90%;
+        height: 20px;
+        margin-top: 26px;
+    }
+
+    .content .counter-block-selects option {
+        font-size: .5rem;
+    }
+
+    .content .contact-img img {
+        max-height: 190px;
+        max-width: 145px;
+    }
+
+    .content .contact-form form button {
+        width: 100%;
+        margin: 35px 0px 0px 50px;
+        max-width: 103px;
+        height: 26px;
+    }
+
+    .content footer .social .social-block {
+        width: 45px;
+        height: 45px;
+    }
+
+    .content footer .social .social-block a img {
+        margin-top: 11px;
+    }
 }
