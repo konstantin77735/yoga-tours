@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
+$(document).ready(function(){        
+    
     const slider = {
         slides: document.querySelectorAll('.slider-item'),
         slidesWrapLine: document.querySelector('.wrap-line'),
@@ -13,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         isRunning: false,
         waitingTime: 3200,
         disableOrEnableArrowsAndDots: function () {
-            console.log(`DisableOrEnable работает!`)
+
             if (this.isRunning == true) {
                 this.prevArrow.classList.add('arrow-disabled');
                 this.nextArrow.classList.add('arrow-disabled');
@@ -62,10 +63,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 this.slidesWrapLine.style.right = this.slidesWrapLinePos + '%';
                 this.isRunning = true;
                 this.disableOrEnableArrowsAndDots();
-                console.log(this.isRunning);
             }
 
-            //  console.log(this.currentSlide);alert(this.currentSlide);
         },
 
         prevSlide: function () {
@@ -81,11 +80,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 this.slidesWrapLine.style.right = this.slidesWrapLinePos + '%';
                 this.isRunning = true;
-                this.disableOrEnableArrowsAndDots();
-                console.log(this.isRunning);
+                this.disableOrEnableArrowsAndDots();                
             }
 
-            // console.log(this.currentSlide);
         },
 
         start: function () {
@@ -94,7 +91,6 @@ document.addEventListener('DOMContentLoaded', function () {
             this.prevArrow.addEventListener('click', function (e) {
                 setTimeout(function () {
                     that.isRunning = false;
-                    console.log(that.isRunning);
                     that.disableOrEnableArrowsAndDots();
                 }, that.waitingTime);
 
@@ -105,7 +101,6 @@ document.addEventListener('DOMContentLoaded', function () {
             this.nextArrow.addEventListener('click', function (e) {
                 setTimeout(function () {
                     that.isRunning = false;
-                    console.log(that.isRunning);
                     that.disableOrEnableArrowsAndDots();
                 }, that.waitingTime);
 
@@ -126,11 +121,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
                             that.isRunning = true; // идёт анимация
                             that.disableOrEnableArrowsAndDots();
-                            console.log(that.isRunning);
 
                             setTimeout(function () {
                                 that.isRunning = false;
-                                console.log(that.isRunning);
                                 that.disableOrEnableArrowsAndDots();
                             }, that.waitingTime);
                             if (event.target.classList.contains('dot-active')) {
@@ -142,23 +135,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
                                 that.isRunning = true;
                                 that.disableOrEnableArrowsAndDots();
-                                console.log(that.isRunning);
 
                                 setTimeout(function () {
                                     that.isRunning = false;
-                                    console.log(that.isRunning);
                                     that.disableOrEnableArrowsAndDots();
                                 }, that.waitingTime);
 
                             }
                         }
 
-
-
-
                     }
-
-
 
                 });
             }

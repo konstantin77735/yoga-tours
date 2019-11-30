@@ -1,7 +1,4 @@
-//Я ПРОВЕРИЛ НА ДЕНВЕРЕ ФОРМУ! ОНА РАБОТАЕТ И ПОСЫЛАЕТ ПИСЬМО В ПАПКУ СЕНДМАИЛ. НА РЕАЛЬНОМ ХОСТИНГЕ ВСЕ ПРАВИЛЬНО БУДЕТ
-
-
-document.addEventListener('DOMContentLoaded', function () {
+ $(document).ready(function () {
 
     let currentNumber = 0, //нескрытый номер таба, соответствующий номеру названия
         arrayOfHeaderTabs = document.querySelectorAll('.info-header-tab'), // массив Заголовков Табов
@@ -22,9 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 hoursSpan.textContent = hours;
                 minutesSpan.textContent = minutes;
                 secondsSpan.textContent = seconds;
-            console.log(`дней = ${days}, часов = ${hours}, минут = ${minutes}, секунд = ${seconds}`);
-
-
         }, 1000);
 
 
@@ -36,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 hideOtherTabs(currentNumber);
                 currentNumber = index;
                 arrayOfTabsContent[currentNumber].classList.remove('fade');
-                console.log(`Визибл таб - ${index}`);
             }
         });
     });

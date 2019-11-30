@@ -1,5 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
-
+ $(document).ready(function () {
     const counter = {
         touristsAndDays: document.querySelectorAll('.counter-block-input'),
         place: document.querySelector('.counter-block-selects'),
@@ -33,8 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
                         if (that.touristsSum != 0 && that.restDaysSum != 0 && that.touristsSum != '' && that.restDaysSum != '') {
 
                             that.totalSum = (parsedTouristsSum + parsedRestDaysSum) * that.price;
-                            console.log(`${parsedRestDaysSum} - людей, ${parsedRestDaysSum} - дней. Итог: ${that.totalSum}
-                            (${that.touristsSum} + ${that.restDaysSum}) * ${that.priceMumbai} = ${that.totalSum}`);
                             that.totalValue.innerHTML = that.totalSum;
                         } else {
                             that.totalValue.textContent = '';
