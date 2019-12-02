@@ -4,7 +4,6 @@
          arrayOfHeaderTabs = document.querySelectorAll('.info-header-tab'), // массив Заголовков Табов
          arrayOfTabsContent = document.querySelectorAll('.info-tabcontent'), //массив Самих Табов   
 
-         
          countDownDate = new Date('Dec 31, 2019 00:00:00').getTime(),
          countDownFunction = setInterval(function () {
              let currentTime = new Date().getTime(),
