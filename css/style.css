@@ -694,7 +694,6 @@ header ul li:before {
 
 .overlay {
     position: fixed;
-    display: none;
     top: 0;
     width: 100%;
     height: 100%;
@@ -850,6 +849,7 @@ header ul li:before {
 }
 
 @media (max-width:1025px) {
+
     html,
     body {
         font-size: 14px;
@@ -867,6 +867,10 @@ header ul li:before {
         max-height: 490px;
         max-width: 450px;
         width: 105%;
+    }
+
+    .overlay .popup {
+        top: 40%;
     }
 }
 
@@ -1096,10 +1100,34 @@ header ul li:before {
     .social-block a img {
         margin-top: 9px;
     }
-    .content .info .photo{
+
+    .content .info .photo {
         display: none;
     }
 
+    .overlay .popup {
+        width: 690px;
+    }
+
+    .overlay .popup-title {
+        font-size: 18px;
+    }
+
+    .overlay .popup-form-header {
+        font-size: 22px;
+    }
+
+    .overlay .popup-form__label {
+        font-size: 20px;
+    }
+
+    .overlay .popup-form__input {
+        width: 290px;
+    }
+
+    .overlay .popup-form__btn {
+        width: 200px;
+    }
 }
 
 @media (max-width:360px) {
@@ -1288,6 +1316,49 @@ header ul li:before {
     }
 }
 
+@media (max-width:414px) {
+    .overlay .popup {
+        width: 340px;
+        top: 33%;
+    }
+
+    .overlay .popup-form {
+        padding: 25px 15px 25px;
+    }
+
+    .overlay .main-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .overlay .popup-form-header {
+        font-size: 16px;
+    }
+
+    .overlay .popup-form__label {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .overlay .popup-form-input {
+        font-size: 14px;
+        width: 240px;
+    }
+
+    .overlay .popup-form__btn {
+        width: 240px;
+        margin: 20px 0 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .overlay .popup {
+        width: 305px;
+    }
+}
+
 @media (max-width: 320px) {
     .main-block .main-block-descr {
         font-size: 11px;
@@ -1353,4 +1424,31 @@ header ul li:before {
     .content footer .social .social-block a img {
         margin-top: 11px;
     }
+
+    .overlay .popup {
+        width: 245px;
+    }
+
+    .overlay .popup .popup-title {
+        font-size: 14px;
+        max-height: 50px;
+        line-height: 50px;
+    }
+
+    .overlay .popup-form-header {
+        font-size: 13px;
+    }
+
+    .overlay .popup-form__label {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+
+    .overlay .popup-form__input,
+    .overlay .popup-form__btn {
+        width: 100%;
+        max-height: 40px;
+        font-size: 14px;
+    }
+
 }
