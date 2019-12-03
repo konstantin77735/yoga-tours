@@ -50,8 +50,6 @@ $(document).ready(function () {
         AddListener(popupSubmit, 'click', getValueOfPopupInput);
         AddListener(document, 'keydown');
 
-        console.log( AddListener(popupBtn2, 'click', showOrHidePopup));
-
         function AddListener(elem, event, func) {
             if (func) {
                 elem.addEventListener(event, func);

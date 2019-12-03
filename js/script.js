@@ -1,6 +1,7 @@
  $(document).ready(function () {
 
-     let currentNumber = 0, //нескрытый номер таба, соответствующий номеру названия
+    function tabs(){
+         let currentNumber = 0, //нескрытый номер таба, соответствующий номеру названия
          arrayOfHeaderTabs = document.querySelectorAll('.info-header-tab'), // массив Заголовков Табов
          arrayOfTabsContent = document.querySelectorAll('.info-tabcontent'), //массив Самих Табов   
 
@@ -50,5 +51,6 @@
              arrayOfTabsContent[i].classList.add('fade');
          }
      }
-
+    }
+     tabs();
  });
