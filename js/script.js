@@ -22,24 +22,33 @@
              secondsSpan.textContent = seconds;
          }, 1000);
 
-   
 
 
- arrayOfHeaderTabs.forEach(function (item, index) {
-     arrayOfHeaderTabs[index].addEventListener('click', function () {
-         if (arrayOfHeaderTabs[index] != currentNumber) {
-             hideOtherTabs(currentNumber);
-             currentNumber = index;
-             arrayOfTabsContent[currentNumber].classList.remove('fade');
-         }
+
+
+
+     arrayOfHeaderTabs.forEach(function (item, index) {
+         arrayOfHeaderTabs[index].addEventListener('click', function () {
+             if (arrayOfHeaderTabs[index] != currentNumber) {
+                 hideOtherTabs(currentNumber);
+                 currentNumber = index;
+                 arrayOfTabsContent[currentNumber].classList.remove('fade');
+                 setTimeout(function () {
+                     arrayOfTabsContent[currentNumber].style.visibility = 'visible';
+                     arrayOfTabsContent[currentNumber].style.opacity = 1;
+                 }, 50);
+             }
+         });
      });
- });
 
 
- function hideOtherTabs(a) {
-     for (let i = a; i < arrayOfHeaderTabs.length; i++) {
-         arrayOfTabsContent[i].classList.add('fade');
+     function hideOtherTabs(a) {
+         for (let i = a; i < arrayOfHeaderTabs.length; i++) {
+
+             arrayOfTabsContent[i].style.visibility = 'hidden';
+             arrayOfTabsContent[i].style.opacity = 0;
+             arrayOfTabsContent[i].classList.add('fade');
+         }
      }
- }
 
  });
