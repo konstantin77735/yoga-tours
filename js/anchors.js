@@ -1,11 +1,10 @@
 $(document).ready(function () {
     const anchors = document.querySelectorAll('a[href*="#"]');
-
-    for (let a of anchors) {
-        a.addEventListener('click', function (e) {
+    for (let anchor of anchors) {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const blockID = a.getAttribute('href');
-            document.querySelector('' + blockID).scrollIntoView({
+            const blockID = anchor.getAttribute('href');
+            document.querySelector(blockID).scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             });
