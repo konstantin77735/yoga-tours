@@ -4,6 +4,7 @@
 <head>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="shortcut icon" href="img/favicon.PNG">
+    <meta http-equiv="Cache-Control" content="no-cache">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Йога туры в Индию</title>
@@ -180,8 +181,8 @@
                     </div>
                     <form id="form" action='php/mail.php' method="POST">
                        
-                        <input name='user_name' required type="name" placeholder="Ваша имя">
-                        <input name='user_email' required type="email" placeholder="Ваша почта">
+                        <input name="user_name" class="userName" type="name" placeholder="Ваша имя" required>
+                        <input name="user_email" class="userEmail" type="email" placeholder="Ваша почта" required>
 
                         <button type="submit">Отправить</button>
                     </form>
