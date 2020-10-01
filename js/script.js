@@ -294,7 +294,8 @@ $(document).ready(function () {
                 email: form.email.value
             }
         }).done(function () {
-            console.log('отправлено')
+            document.querySelector(".userName").value = '';
+            document.querySelector(".userEmail").value = '';
         });    
     
     });
